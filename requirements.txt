@@ -1,0 +1,6 @@
+numpy
+pandas
+scipy
+fastdtw
+scikit-learn
+matplotlib
