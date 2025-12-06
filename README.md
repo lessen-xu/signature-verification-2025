@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ## 💾 Data
 
 The project uses the **MCYT Baseline Corpus**. Please download the dataset from ILIAS and extract it into the `data/` directory.
-[cite_start]The structure must be as follows [cite: 337-342]:
+The structure must be as follows:
 
 ```text
 data/
@@ -60,7 +60,7 @@ data/
 
 To distinguish skilled forgeries from genuine signatures, we implemented the following pipeline:
 
-1.  [cite_start]**Data Loading**: The system parses TSV files containing time-series data `[t, x, y, pressure, ...]` [cite: 352-360] and loads ground truth labels.
+1.  **Data Loading**: The system parses TSV files containing time-series data `[t, x, y, pressure, ...]` and loads ground truth labels.
 2.  **Feature Extraction**:
       * **Dynamic Features**: We discard absolute coordinates `(x, y)` to resist skilled forgeries (who often copy shape perfectly).
       * **Velocity**: We compute horizontal ($v_x$) and vertical ($v_y$) velocity derivatives.
